@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zy.exercise3.Controller.mainController">
+   <children>
+      <TabPane cache="true" layoutX="37.0" prefHeight="410.0" prefWidth="635.0" style="-fx-border-style: solid; -fx-border-radius: 5;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Date &amp; Time">
+            <content>
+              <AnchorPane fx:id="datePane" minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="673.0">
+                     <children>
+                        <Separator layoutX="314.0" layoutY="7.0" orientation="VERTICAL" prefHeight="361.0" prefWidth="5.0" />
+                        <AnchorPane layoutX="23.0" layoutY="55.0" prefHeight="311.0" prefWidth="273.0" style="-fx-border-style: solid; -fx-border-radius: 5;">
+                           <children>
+                              <Spinner fx:id="SpinYear" layoutX="138.0" layoutY="77.0" prefHeight="23.0" prefWidth="121.0" />
+                              <ChoiceBox fx:id="CBMonth" layoutX="18.0" layoutY="77.0" prefHeight="23.0" prefWidth="106.0" />
+                              <FlowPane fx:id="FPDate" layoutX="18.0" layoutY="155.0" prefHeight="140.0" prefWidth="240.0" style="-fx-border-style: solid;" />
+                              <Label fx:id="LDateTime" layoutX="18.0" layoutY="23.0" prefHeight="30.0" prefWidth="236.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Sun" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Mon" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Tue" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Wed" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Thu" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Fri" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="122.0" prefHeight="27.0" prefWidth="34.0" style="-fx-border-style: solid; -fx-border-width: 1px;" text="Sat" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="23.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="48.240234375">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="346.0" layoutY="55.0" prefHeight="311.0" prefWidth="273.0" style="-fx-border-style: solid; -fx-border-radius: 5;">
+                           <children>
+                              <Spinner fx:id="SpinMin" layoutX="94.0" layoutY="274.0" prefHeight="23.0" prefWidth="65.0" />
+                              <Spinner fx:id="SpinSec" layoutX="175.0" layoutY="274.0" prefHeight="23.0" prefWidth="65.0" />
+                              <Spinner fx:id="SpinHour" layoutX="14.0" layoutY="274.0" prefHeight="23.0" prefWidth="65.0" />
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="346.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="48.240234375">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Time Zone">
+            <content>
+              <AnchorPane fx:id="TimeZonePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="isChange" layoutX="91.0" layoutY="308.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="439.0" text="Automatically adjust clock for daylight saving changes">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <ChoiceBox fx:id="CBTimeZone" layoutX="87.0" layoutY="21.0" prefHeight="23.0" prefWidth="459.0" />
+                        <ImageView fitHeight="220.0" fitWidth="455.0" layoutX="89.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/map.gif" />
+                           </image></ImageView>
+                        <ImageView fx:id="IMGTimeZone" fitHeight="16.0" fitWidth="16.0" layoutX="88.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/down.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="okBtn" layoutX="461.0" layoutY="413.0" mnemonicParsing="false" onAction="#ok" prefHeight="23.0" prefWidth="64.0" text="OK" />
+      <Button fx:id="cancelBtn" layoutX="544.0" layoutY="413.0" mnemonicParsing="false" onAction="#cancel" prefHeight="23.0" prefWidth="64.0" text="Cancel" />
+      <Button fx:id="applyBtn" layoutX="623.0" layoutY="413.0" mnemonicParsing="false" onAction="#apply" prefHeight="23.0" prefWidth="64.0" text="Apply" />
+      <Label fx:id="LTimeZone" contentDisplay="CENTER" layoutX="37.0" layoutY="417.0" prefHeight="23.0" prefWidth="211.0" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
